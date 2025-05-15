@@ -11,32 +11,20 @@
 }
 
 body {
-  font-family: var(--font-main);
-  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
   color: #333;
-  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-  background: var(--primary-color);
-  color: #fff;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
 .hero {
   text-align: center;
   padding: 3rem;
@@ -52,6 +40,42 @@ nav a {
 .about-hero h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+}
+/* ----------------------------------------------
+   Header & Navigation Styles
+---------------------------------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0b0c10;
+  color: white;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #fdd835; /* sunflower yellow accent */
 }
 
 .about-content {
@@ -72,15 +96,10 @@ nav a {
 .about-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.about-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* -------------------------------------
